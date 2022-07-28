@@ -26,5 +26,5 @@
 </code>
 </pre>
 </p>
-<li><p><strong>Command:</strong> file_name.py  any_file initial_size(Must be an integer) final_size(Must be an integer) steps(Must be an integer) </p></li>
+<li><p><strong>Command:</strong> file_name.py   any_file   initial_size(Must be an integer)    final_size(Must be an integer)   steps(Must be an integer) </p></li>
 </ul>
