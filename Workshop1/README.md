@@ -1,6 +1,5 @@
 <h2><strong>Asymptotic Notation</strong></h2>
 <p><strong>Authors:</strong>Juan Sebastian Herrera Guaitero && Jorge Luis Esposito Albornoz</p>
-<br>
 <h3><strong>Sample file</strong></h4>
 <figure>
 <a href="https://ibb.co/h2y5CZm"><img src="https://i.ibb.co/h2y5CZm/image.jpg" alt="image" border="0"></a>
