@@ -1,5 +1,4 @@
 <h2><strong>Asymptotic Notation</strong></h2>
-<br>
 <p><strong>Authors:</strong>Juan Sebastian Herrera Guaitero && Jorge Luis Esposito Albornoz</p>
 <br>
 <h3><strong>Sample file</strong></h4>
