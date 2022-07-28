@@ -3,7 +3,6 @@
 <p><strong>Authors:</strong>Juan Sebastian Herrera Guaitero && Jorge Luis Esposito Albornoz</p>
 <br>
 <h3><strong>Sample file</strong></h4>
-<br>
 <figure>
 <a href="https://ibb.co/h2y5CZm"><img src="https://i.ibb.co/h2y5CZm/image.jpg" alt="image" border="0"></a>
   <br>
@@ -19,7 +18,7 @@
 <li><a href="https://github.com/jsebastianherrera/Algorithm_analysis/blob/workshop/Workshop1/sorted_exp.py">sorted_exp.py</a></li>
 <li><a href="https://github.com/jsebastianherrera/Algorithm_analysis/blob/workshop/Workshop1/inverted_exp.py">inverted_exp.py</a></li>
 </ol>
-<p>All scripts previously listed has basically the same logic, they've only been modified in the following line:
+<p>All files listed above have the same logic, they have only been modified in the following line:
 <pre>
 <code> input_sequence = sorted(input_sequence, reverse=Flag)
 # Flag= sorted ? False : True  *In random_exp.py the line above was ommited* 
