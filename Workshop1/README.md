@@ -10,15 +10,20 @@
 </figure>
 <br>
 <h3><strong>Usage</strong></p>
+
 <ul>
-<li>Run one of the following Python files <ol>
+<li>Run one of the following Python files: </li>
+<ol>
 <li><a href="https://github.com/jsebastianherrera/Algorithm_analysis/blob/workshop/Workshop1/random_exp.py">random_exp.py</a></li>
 <li><a href="https://github.com/jsebastianherrera/Algorithm_analysis/blob/workshop/Workshop1/sorted_exp.py">sorted_exp.py</a></li>
 <li><a href="https://github.com/jsebastianherrera/Algorithm_analysis/blob/workshop/Workshop1/inverted_exp.py">inverted_exp.py</a></li>
-</ol></li>
-<p>All scripts previously listed has basically the same logic, they've only been modified in the following line:<pre><code> input_sequence = sorted(input_sequence, reverse=Flag)
+</ol>
+<p>All scripts previously listed has basically the same logic, they've only been modified in the following line:
+<pre>
+<code> input_sequence = sorted(input_sequence, reverse=Flag)
 # Flag= sorted ? False : True  *In random_exp.py the line above was ommited* 
-
-</code></pre> </p>
+</code>
+</pre>
+</p>
 <p><strong>Command:</strong> file_name.py  any_file initial_size(Must be an integer) final_size(Must be an integer) steps(Must be an integer) </p>
 </ul>
