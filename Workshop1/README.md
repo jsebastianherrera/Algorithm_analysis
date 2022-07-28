@@ -16,7 +16,7 @@
 <li><a href="https://github.com/jsebastianherrera/Algorithm_analysis/blob/workshop/Workshop1/sorted_exp.py">sorted_exp.py</a></li>
 <li><a href="https://github.com/jsebastianherrera/Algorithm_analysis/blob/workshop/Workshop1/inverted_exp.py">inverted_exp.py</a></li>
 </ol>
-<p>All files listed above have the same logic, they have only been modified in the following line:
+<p>All files listed above have the same logic, they were only modified in the following line:
 <pre>
 <code> input_sequence = sorted(input_sequence, reverse=Flag)
 # Flag= sorted ? False : True  *In random_exp.py the line above was omitted* 
