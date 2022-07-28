@@ -6,10 +6,11 @@
 <br>
 <figure>
 <a href="https://ibb.co/h2y5CZm"><img src="https://i.ibb.co/h2y5CZm/image.jpg" alt="image" border="0"></a>
+  <br>
 <figcaption><strong>Extension:</strong> jpg <strong> Size:</strong> 203kb</figcaption>
 </figure>
 <br>
-<h3><strong>Usage</strong></p>
+<h3><strong>Usage</strong></h3>
 
 <ul>
 <li>Run one of the following Python files: </li>
