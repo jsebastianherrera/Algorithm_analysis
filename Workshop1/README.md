@@ -19,7 +19,7 @@
 <p>All files listed above have the same logic, they have only been modified in the following line:
 <pre>
 <code> input_sequence = sorted(input_sequence, reverse=Flag)
-# Flag= sorted ? False : True  *In random_exp.py the line above was ommited* 
+# Flag= sorted ? False : True  *In random_exp.py the line above was omitted* 
 </code>
 </pre>
 </p>
