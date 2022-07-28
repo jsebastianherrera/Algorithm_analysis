@@ -62,9 +62,10 @@ input_sequence = []
 for i in range(N):
     input_sequence += [
         struct.unpack(
-            element_id, input_buffer[element_size * i : element_size * (i + 1)]
+            element_id, input_buffer[element_size * i: element_size * (i + 1)]
         )[0]
     ]
+#  sort
 input_sequence = sorted(input_sequence, reverse=False)
 # end for
 # Perform experiments

@@ -62,11 +62,12 @@ input_sequence = []
 for i in range(N):
     input_sequence += [
         struct.unpack(
-            element_id, input_buffer[element_size * i : element_size * (i + 1)]
+            element_id, input_buffer[element_size * i: element_size * (i + 1)]
         )[0]
     ]
-input_sequence = sorted(input_sequence, reverse=True)
 # end for
+# Reverse
+input_sequence = sorted(input_sequence, reverse=True)
 # Perform experiments
 for n in range(b, e + 1, s):
     nbr = DoExperiment(input_sequence[0:n], NaiveBubbleSort)
