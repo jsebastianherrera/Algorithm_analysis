@@ -1,0 +1,88 @@
+\documentclass[letter]{article}
+\usepackage[spanish]{babel}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx, color}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{mathrsfs}
+
+
+% Some definitions
+\floatname{algorithm}{Algoritmo}
+
+% Author info
+\title {Secuencia más larga de vecinos que están ordenados}
+\author{ Jorge Luis Esposito Albornoz$^1$  Juan Sebastián Herrera Guaitero$^1$}
+\date{
+	$^1$Departamento de Ingeniería de Sistemas, Pontificia Universidad Javeriana\\Bogotá,  Colombia \\
+	\texttt{\{jesposito,jsebastianherrera\}@javeriana.edu.co}\\~\\
+	\today
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+	En este documento se presenta la formalización del problema de encontrar la secuencia más larga de vecinos que están ordenados.
+	\textbf{Palabras clave:} matriz, adyacentes.
+\end{abstract}
+
+\tableofcontents
+
+\newpage
+\section{Formalización problema}
+El problema de encontrar la secuencia mas larga de vecinos que estan ordenados, es un problema muy utilizado en el mundo empresarial para realizar entrevistas de conocimiento
+a los candidatos. Su dificultad particular radica en la solucion del problema, los primeros acercamientos a la solucion suelen ser a traves
+de la recursion ingenua, sin embargo, utilizar programacion dinamica es una buena opcion.
+
+\subsection{Definición del problema}
+Dada una matriz cuadrada natural de tamaño $NxN$, que contiene los números únicos en el rango $[1,NxN]$, pero que no están forzosamente en orden, encontrar la secuencia más larga de vecinos que están ordenados y los elementos adyacentes en la matriz que tienen una diferencia de $+1$.
+\break
+\break
+El problema de la secuencia mas larga de vecinos ordenados se define apartir de:
+\begin{enumerate}
+	\item Una matriz $M$ de elementos $a\in\mathbb{Z}$.
+\end{enumerate}
+Generar una secuencia $S$ cuyos elementos cumplan con una relacion $a<b$.
+\begin{itemize}
+	\item \textbf{Entradas:}
+	      \begin{itemize}
+		      \item $M = \left<\left<a_{ij}\in \mathbb{Z} \right>\right>$
+	      \end{itemize}
+	\item \textbf{Salidas:}
+	      \begin{itemize}
+		      \item $S = \left<e_i \in M\right> ~ | ~ \forall i \in M ~ e_i \le e_{i+1}  $
+	      \end{itemize}
+\end{itemize}
+\section{Algoritmo de solucion}
+\begin{algorithm}[!htb]
+	\caption{Naive solution}
+	\begin{algorithmic}[1]
+		\Procedure{$memo$}{$M$}
+		\If{$i = j$}
+		\State $R ~ +\gets ~ ``A" ~ + ~ string(i+1)$
+		\Else
+		\State $R ~ +\gets ~ ``(" $
+		\State $q \gets B_{ij}$
+		\State \Call{MatrixChainBk}{$B,R,i,q$}
+		\State \Call{MatrixChainBk}{$B,R,q+1,j$}
+		\State $R ~ +\gets ``)"$
+		\EndIf
+		\EndProcedure
+	\end{algorithmic}
+\end{algorithm}
+\subsection{Analisis de complejidad}
+\subsection{Invariante}
+\section{Analisis experimental}
+\subsection{Protocolo}
+\subsection{Procedimiento}
+\subsection{Resultado}
+\subsection{Analisis}
+\section{Conclusiones}
+
+\end{document}
+
