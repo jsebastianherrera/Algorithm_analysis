@@ -38,6 +38,7 @@ int main(int argc, char **argv) {
     std::cout << aux_memo(T, M) << std::endl;
     print(M);
     std::cout << std::endl;
+    bottom_up(T);
 
   } else {
     std::cout << "1 parameter is needed" << std::endl;
@@ -62,6 +63,27 @@ unsigned int aux_memo(vec T, vec &M) {
     }
   }
   return q;
+}
+unsigned int bottom_up(vec T) {
+  vec M(T.size(), std::vector<int>(T.size(), 0));
+  unsigned int q;
+  for (int i = 0; i < T.size(); ++i) {
+    q = 0;
+    for (int j = 0; j < T.size(); ++j) {
+      if (i < T.size() - 1 and T[i][j] + 1 == T[i + 1][j])
+        q = max(q, M[i + 1][j]);
+      if (j < T.size() - 1 and T[i][j] + 1 == T[i][j + 1])
+        q = max(q, M[i][j + 1]);
+      if (i > 0 and T[i][j] - 1 == T[i - 1][j])
+        q = max(q, M[i - 1][j]);
+      if (j > 0 and T[i][j] - 1 == T[i][j - 1])
+        q = max(q, M[i][j - 1]);
+      M[i][j] = q + 1;
+    }
+  }
+  print(M);
+  std::cout << std::endl;
+  return 0;
 }
 unsigned int naive(vec T, unsigned int i, unsigned int j) {
   unsigned int q = 0;
